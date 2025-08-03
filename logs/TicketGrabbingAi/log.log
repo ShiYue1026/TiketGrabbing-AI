@@ -1,0 +1,24 @@
+[TicketGrabbingAi] 2025-08-04 00:34:38  INFO TicketGrabbingAiApplication:53 - Starting TicketGrabbingAiApplication using Java 17.0.5 with PID 22104 (G:\TicketGrabbing-AI\target\classes started by shiyu in G:\TicketGrabbing-AI)
+[TicketGrabbingAi] 2025-08-04 00:34:38  INFO TicketGrabbingAiApplication:652 - No active profile set, falling back to 1 default profile: "default"
+[TicketGrabbingAi] 2025-08-04 00:34:39  WARN ClassPathMapperScanner:44 - No MyBatis mapper was found in '[com.shiyue]' package. Please check your configuration.
+[TicketGrabbingAi] 2025-08-04 00:34:39  INFO TomcatWebServer:111 - Tomcat initialized with port 6084 (http)
+[TicketGrabbingAi] 2025-08-04 00:34:39  INFO Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-6084"]
+[TicketGrabbingAi] 2025-08-04 00:34:39  INFO StandardService:168 - Starting service [Tomcat]
+[TicketGrabbingAi] 2025-08-04 00:34:39  INFO StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.43]
+[TicketGrabbingAi] 2025-08-04 00:34:39  INFO [/]:168 - Initializing Spring embedded WebApplicationContext
+[TicketGrabbingAi] 2025-08-04 00:34:39  INFO ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 1112 ms
+[TicketGrabbingAi] 2025-08-04 00:34:40  INFO HikariDataSource:109 - HikariPool-1 - Starting...
+[TicketGrabbingAi] 2025-08-04 00:34:40  INFO HikariPool:580 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1efcba00
+[TicketGrabbingAi] 2025-08-04 00:34:40  INFO HikariDataSource:122 - HikariPool-1 - Start completed.
+[TicketGrabbingAi] 2025-08-04 00:34:41  INFO Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-6084"]
+[TicketGrabbingAi] 2025-08-04 00:34:41  INFO [/]:168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[TicketGrabbingAi] 2025-08-04 00:34:41  INFO DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+[TicketGrabbingAi] 2025-08-04 00:34:41  INFO DispatcherServlet:554 - Completed initialization in 1 ms
+[TicketGrabbingAi] 2025-08-04 00:34:41  INFO TomcatWebServer:243 - Tomcat started on port 6084 (http) with context path '/'
+[TicketGrabbingAi] 2025-08-04 00:34:41  INFO TicketGrabbingAiApplication:59 - Started TicketGrabbingAiApplication in 3.636 seconds (process running for 4.627)
+[TicketGrabbingAi] 2025-08-04 00:35:32  WARN DefaultHandlerExceptionResolver:254 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'chatId' for method parameter type String is not present]
+[TicketGrabbingAi] 2025-08-04 00:35:45  WARN DefaultHandlerExceptionResolver:254 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'chatId' for method parameter type String is not present]
+[TicketGrabbingAi] 2025-08-04 00:36:39  INFO GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+[TicketGrabbingAi] 2025-08-04 00:36:40  INFO GracefulShutdown:76 - Graceful shutdown complete
+[TicketGrabbingAi] 2025-08-04 00:36:40  INFO HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+[TicketGrabbingAi] 2025-08-04 00:36:40  INFO HikariDataSource:351 - HikariPool-1 - Shutdown completed.

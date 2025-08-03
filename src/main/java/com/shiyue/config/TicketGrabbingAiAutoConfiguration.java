@@ -1,9 +1,13 @@
 package com.shiyue.config;
 
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
+import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.ai.deepseek.DeepSeekChatModel;
 import org.springframework.context.annotation.Bean;
+
+import static com.shiyue.constant.TicketGrabbingAiConstant.TICKET_GRABBING_AI_SYSTEM_PROMPT;
 
 public class TicketGrabbingAiAutoConfiguration {
 
@@ -19,4 +23,16 @@ public class TicketGrabbingAiAutoConfiguration {
                 .build();
     }
 
+    @Bean
+    public ChatClient assistantChatClient(DeepSeekChatModel model, ChatMemory chatMemory) {
+        return ChatClient
+                .builder(model)
+                .defaultSystem(TICKET_GRABBING_AI_SYSTEM_PROMPT)
+                .defaultAdvisors(
+                        new SimpleLoggerAdvisor(),
+                        MessageChatMemoryAdvisor.builder(chatMemory).build()
+                )
+//                .defaultTools(aiProgram)
+                .build();
+    }
 }
