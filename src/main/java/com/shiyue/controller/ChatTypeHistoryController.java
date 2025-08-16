@@ -7,6 +7,7 @@ import com.shiyue.vo.ChatTypeHistoryVO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.ai.chat.messages.Message;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,6 +17,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/chat")
+@CrossOrigin("*")
 public class ChatTypeHistoryController {
 
     private final ChatTypeHistoryService chatHistoryService;
