@@ -1,5 +1,8 @@
 package com.shiyue.config;
 
+import com.shiyue.advisor.ChatTypeHistoryAdvisor;
+import com.shiyue.enums.ChatType;
+import com.shiyue.service.ChatTypeHistoryService;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
@@ -7,7 +10,7 @@ import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.ai.deepseek.DeepSeekChatModel;
 import org.springframework.context.annotation.Bean;
 
-import static com.shiyue.constant.TicketGrabbingAiConstant.TICKET_GRABBING_AI_SYSTEM_PROMPT;
+import static com.shiyue.constant.TicketGrabbingAiConstant.*;
 
 public class TicketGrabbingAiAutoConfiguration {
 
@@ -24,13 +27,15 @@ public class TicketGrabbingAiAutoConfiguration {
     }
 
     @Bean
-    public ChatClient assistantChatClient(DeepSeekChatModel model, ChatMemory chatMemory) {
+    public ChatClient assistantChatClient(DeepSeekChatModel model, ChatMemory chatMemory, ChatTypeHistoryService chatTypeHistoryService) {
         return ChatClient
                 .builder(model)
                 .defaultSystem(TICKET_GRABBING_AI_SYSTEM_PROMPT)
                 .defaultAdvisors(
                         new SimpleLoggerAdvisor(),
-                        MessageChatMemoryAdvisor.builder(chatMemory).build()
+                        ChatTypeHistoryAdvisor.builder(chatTypeHistoryService).type(ChatType.ASSISTANT.getCode())
+                                .order(CHAT_TYPE_HISTORY_ADVISOR_ORDER).build(),
+                        MessageChatMemoryAdvisor.builder(chatMemory).order(MESSAGE_CHAT_MEMORY_ADVISOR_ORDER).build()
                 )
 //                .defaultTools(aiProgram)
                 .build();

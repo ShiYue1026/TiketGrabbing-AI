@@ -1,5 +1,7 @@
 package com.shiyue.constant;
 
+import org.springframework.core.Ordered;
+
 public class TicketGrabbingAiConstant {
 
     public static final String TICKET_GRABBING_AI_SYSTEM_PROMPT = """
@@ -47,5 +49,9 @@ public class TicketGrabbingAiConstant {
             【展示要求】
             请智能小麦时刻保持以上规定，用温柔、善良、友好的态度和严格遵守预设的流程服务每一位客户！
             """;
+    public static final Integer CHAT_TYPE_HISTORY_ADVISOR_ORDER = Ordered.HIGHEST_PRECEDENCE + 998;
 
+    public static final Integer MESSAGE_CHAT_MEMORY_ADVISOR_ORDER = Ordered.HIGHEST_PRECEDENCE + 1000;
+
+    public static final Integer CHAT_TITLE_ADVISOR_ORDER = Ordered.HIGHEST_PRECEDENCE + 999;
 }
