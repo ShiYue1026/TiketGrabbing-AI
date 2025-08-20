@@ -19,7 +19,7 @@ public class ApiResponse<T> implements Serializable {
     @Schema(name ="data", description ="响应的具体数据")
     private T data;
 
-    private ApiResponse() {}
+    public ApiResponse() {}
 
     public static <T> ApiResponse<T> error(Integer code, String message) {
         ApiResponse<T> apiResponse = new ApiResponse<T>();

@@ -1,24 +1,127 @@
-[TicketGrabbingAi] 2025-08-04 00:34:38  INFO TicketGrabbingAiApplication:53 - Starting TicketGrabbingAiApplication using Java 17.0.5 with PID 22104 (G:\TicketGrabbing-AI\target\classes started by shiyu in G:\TicketGrabbing-AI)
-[TicketGrabbingAi] 2025-08-04 00:34:38  INFO TicketGrabbingAiApplication:652 - No active profile set, falling back to 1 default profile: "default"
-[TicketGrabbingAi] 2025-08-04 00:34:39  WARN ClassPathMapperScanner:44 - No MyBatis mapper was found in '[com.shiyue]' package. Please check your configuration.
-[TicketGrabbingAi] 2025-08-04 00:34:39  INFO TomcatWebServer:111 - Tomcat initialized with port 6084 (http)
-[TicketGrabbingAi] 2025-08-04 00:34:39  INFO Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-6084"]
-[TicketGrabbingAi] 2025-08-04 00:34:39  INFO StandardService:168 - Starting service [Tomcat]
-[TicketGrabbingAi] 2025-08-04 00:34:39  INFO StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.43]
-[TicketGrabbingAi] 2025-08-04 00:34:39  INFO [/]:168 - Initializing Spring embedded WebApplicationContext
-[TicketGrabbingAi] 2025-08-04 00:34:39  INFO ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 1112 ms
-[TicketGrabbingAi] 2025-08-04 00:34:40  INFO HikariDataSource:109 - HikariPool-1 - Starting...
-[TicketGrabbingAi] 2025-08-04 00:34:40  INFO HikariPool:580 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1efcba00
-[TicketGrabbingAi] 2025-08-04 00:34:40  INFO HikariDataSource:122 - HikariPool-1 - Start completed.
-[TicketGrabbingAi] 2025-08-04 00:34:41  INFO Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-6084"]
-[TicketGrabbingAi] 2025-08-04 00:34:41  INFO [/]:168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[TicketGrabbingAi] 2025-08-04 00:34:41  INFO DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
-[TicketGrabbingAi] 2025-08-04 00:34:41  INFO DispatcherServlet:554 - Completed initialization in 1 ms
-[TicketGrabbingAi] 2025-08-04 00:34:41  INFO TomcatWebServer:243 - Tomcat started on port 6084 (http) with context path '/'
-[TicketGrabbingAi] 2025-08-04 00:34:41  INFO TicketGrabbingAiApplication:59 - Started TicketGrabbingAiApplication in 3.636 seconds (process running for 4.627)
-[TicketGrabbingAi] 2025-08-04 00:35:32  WARN DefaultHandlerExceptionResolver:254 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'chatId' for method parameter type String is not present]
-[TicketGrabbingAi] 2025-08-04 00:35:45  WARN DefaultHandlerExceptionResolver:254 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'chatId' for method parameter type String is not present]
-[TicketGrabbingAi] 2025-08-04 00:36:39  INFO GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
-[TicketGrabbingAi] 2025-08-04 00:36:40  INFO GracefulShutdown:76 - Graceful shutdown complete
-[TicketGrabbingAi] 2025-08-04 00:36:40  INFO HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
-[TicketGrabbingAi] 2025-08-04 00:36:40  INFO HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+[TicketGrabbingAi] 2025-08-21 00:01:05  INFO easy-es:30 - ===> Execute By Easy-Es: 
+POST /damai-program/_search?typed_keys=true
+{"query":{"bool":{"must":[{"term":{"areaName.keyword":{"boost":1.0,"value":"北京"}}},{"term":{"actor.keyword":{"boost":1.0,"value":"周杰伦"}}}]}},"size":10000,"track_total_hits":true}
+[TicketGrabbingAi] 2025-08-21 00:01:12  INFO easy-es:30 - ===> Execute By Easy-Es: 
+POST /damai-program/_search?typed_keys=true
+{"query":{"bool":{"must":[{"term":{"areaName.keyword":{"boost":1.0,"value":"北京"}}},{"term":{"actor.keyword":{"boost":1.0,"value":"周杰伦"}}}]}},"size":10000,"track_total_hits":true}
+[TicketGrabbingAi] 2025-08-21 00:12:35  INFO GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+[TicketGrabbingAi] 2025-08-21 00:12:36  INFO GracefulShutdown:76 - Graceful shutdown complete
+[TicketGrabbingAi] 2025-08-21 00:12:36  INFO HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+[TicketGrabbingAi] 2025-08-21 00:12:36  INFO HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+[TicketGrabbingAi] 2025-08-21 00:13:07  INFO TicketGrabbingAiApplication:53 - Starting TicketGrabbingAiApplication using Java 17.0.5 with PID 13084 (G:\TicketGrabbing-AI\target\classes started by shiyu in G:\TicketGrabbing-AI)
+[TicketGrabbingAi] 2025-08-21 00:13:07  INFO TicketGrabbingAiApplication:652 - No active profile set, falling back to 1 default profile: "default"
+[TicketGrabbingAi] 2025-08-21 00:13:08  INFO TomcatWebServer:111 - Tomcat initialized with port 6000 (http)
+[TicketGrabbingAi] 2025-08-21 00:13:08  INFO Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-6000"]
+[TicketGrabbingAi] 2025-08-21 00:13:08  INFO StandardService:168 - Starting service [Tomcat]
+[TicketGrabbingAi] 2025-08-21 00:13:08  INFO StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.43]
+[TicketGrabbingAi] 2025-08-21 00:13:08  INFO [/]:168 - Initializing Spring embedded WebApplicationContext
+[TicketGrabbingAi] 2025-08-21 00:13:08  INFO ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 1093 ms
+[TicketGrabbingAi] 2025-08-21 00:13:08  INFO easy-es:30 - ===> manual index mode activated
+[TicketGrabbingAi] 2025-08-21 00:13:09  INFO HikariDataSource:109 - HikariPool-1 - Starting...
+[TicketGrabbingAi] 2025-08-21 00:13:09  INFO HikariPool:580 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f77e065
+[TicketGrabbingAi] 2025-08-21 00:13:09  INFO HikariDataSource:122 - HikariPool-1 - Start completed.
+[TicketGrabbingAi] 2025-08-21 00:13:10  INFO Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-6000"]
+[TicketGrabbingAi] 2025-08-21 00:13:10  INFO [/]:168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[TicketGrabbingAi] 2025-08-21 00:13:10  INFO DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+[TicketGrabbingAi] 2025-08-21 00:13:10  INFO DispatcherServlet:554 - Completed initialization in 1 ms
+[TicketGrabbingAi] 2025-08-21 00:13:10  INFO TomcatWebServer:243 - Tomcat started on port 6000 (http) with context path '/'
+[TicketGrabbingAi] 2025-08-21 00:13:10  INFO TicketGrabbingAiApplication:59 - Started TicketGrabbingAiApplication in 3.74 seconds (process running for 4.712)
+[TicketGrabbingAi] 2025-08-21 00:15:57  INFO GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+[TicketGrabbingAi] 2025-08-21 00:15:58  INFO GracefulShutdown:76 - Graceful shutdown complete
+[TicketGrabbingAi] 2025-08-21 00:15:58  INFO HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+[TicketGrabbingAi] 2025-08-21 00:15:58  INFO HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+[TicketGrabbingAi] 2025-08-21 00:16:09  INFO TicketGrabbingAiApplication:53 - Starting TicketGrabbingAiApplication using Java 17.0.5 with PID 26188 (G:\TicketGrabbing-AI\target\classes started by shiyu in G:\TicketGrabbing-AI)
+[TicketGrabbingAi] 2025-08-21 00:16:09  INFO TicketGrabbingAiApplication:652 - No active profile set, falling back to 1 default profile: "default"
+[TicketGrabbingAi] 2025-08-21 00:16:10  INFO TomcatWebServer:111 - Tomcat initialized with port 6000 (http)
+[TicketGrabbingAi] 2025-08-21 00:16:10  INFO Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-6000"]
+[TicketGrabbingAi] 2025-08-21 00:16:10  INFO StandardService:168 - Starting service [Tomcat]
+[TicketGrabbingAi] 2025-08-21 00:16:10  INFO StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.43]
+[TicketGrabbingAi] 2025-08-21 00:16:10  INFO [/]:168 - Initializing Spring embedded WebApplicationContext
+[TicketGrabbingAi] 2025-08-21 00:16:10  INFO ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 1113 ms
+[TicketGrabbingAi] 2025-08-21 00:16:10  INFO easy-es:30 - ===> manual index mode activated
+[TicketGrabbingAi] 2025-08-21 00:16:11  INFO HikariDataSource:109 - HikariPool-1 - Starting...
+[TicketGrabbingAi] 2025-08-21 00:16:11  INFO HikariPool:580 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f655dbd
+[TicketGrabbingAi] 2025-08-21 00:16:11  INFO HikariDataSource:122 - HikariPool-1 - Start completed.
+[TicketGrabbingAi] 2025-08-21 00:16:12  INFO Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-6000"]
+[TicketGrabbingAi] 2025-08-21 00:16:12  INFO [/]:168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[TicketGrabbingAi] 2025-08-21 00:16:12  INFO DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+[TicketGrabbingAi] 2025-08-21 00:16:12  INFO DispatcherServlet:554 - Completed initialization in 1 ms
+[TicketGrabbingAi] 2025-08-21 00:16:12  INFO TomcatWebServer:243 - Tomcat started on port 6000 (http) with context path '/'
+[TicketGrabbingAi] 2025-08-21 00:16:12  INFO TicketGrabbingAiApplication:59 - Started TicketGrabbingAiApplication in 3.297 seconds (process running for 4.233)
+[TicketGrabbingAi] 2025-08-21 00:19:01  INFO GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+[TicketGrabbingAi] 2025-08-21 00:19:01  INFO GracefulShutdown:76 - Graceful shutdown complete
+[TicketGrabbingAi] 2025-08-21 00:19:02  INFO HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+[TicketGrabbingAi] 2025-08-21 00:19:02  INFO HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+[TicketGrabbingAi] 2025-08-21 00:21:27  INFO TicketGrabbingAiApplication:53 - Starting TicketGrabbingAiApplication using Java 17.0.5 with PID 38856 (G:\TicketGrabbing-AI\target\classes started by shiyu in G:\TicketGrabbing-AI)
+[TicketGrabbingAi] 2025-08-21 00:21:27  INFO TicketGrabbingAiApplication:652 - No active profile set, falling back to 1 default profile: "default"
+[TicketGrabbingAi] 2025-08-21 00:21:28  INFO TomcatWebServer:111 - Tomcat initialized with port 6084 (http)
+[TicketGrabbingAi] 2025-08-21 00:21:28  INFO Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-6084"]
+[TicketGrabbingAi] 2025-08-21 00:21:28  INFO StandardService:168 - Starting service [Tomcat]
+[TicketGrabbingAi] 2025-08-21 00:21:28  INFO StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.43]
+[TicketGrabbingAi] 2025-08-21 00:21:28  INFO [/]:168 - Initializing Spring embedded WebApplicationContext
+[TicketGrabbingAi] 2025-08-21 00:21:28  INFO ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 1186 ms
+[TicketGrabbingAi] 2025-08-21 00:21:28  INFO easy-es:30 - ===> manual index mode activated
+[TicketGrabbingAi] 2025-08-21 00:21:29  INFO HikariDataSource:109 - HikariPool-1 - Starting...
+[TicketGrabbingAi] 2025-08-21 00:21:29  INFO HikariPool:580 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f655dbd
+[TicketGrabbingAi] 2025-08-21 00:21:29  INFO HikariDataSource:122 - HikariPool-1 - Start completed.
+[TicketGrabbingAi] 2025-08-21 00:21:30  INFO Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-6084"]
+[TicketGrabbingAi] 2025-08-21 00:21:30  INFO [/]:168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[TicketGrabbingAi] 2025-08-21 00:21:30  INFO DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+[TicketGrabbingAi] 2025-08-21 00:21:30  INFO DispatcherServlet:554 - Completed initialization in 1 ms
+[TicketGrabbingAi] 2025-08-21 00:21:30  INFO TomcatWebServer:243 - Tomcat started on port 6084 (http) with context path '/'
+[TicketGrabbingAi] 2025-08-21 00:21:30  INFO TicketGrabbingAiApplication:59 - Started TicketGrabbingAiApplication in 3.893 seconds (process running for 4.878)
+[TicketGrabbingAi] 2025-08-21 00:21:56  INFO easy-es:30 - ===> Execute By Easy-Es: 
+POST /damai-program/_search?typed_keys=true
+{"query":{"bool":{"must":[{"term":{"areaName.keyword":{"boost":1.0,"value":"北京"}}},{"term":{"actor.keyword":{"boost":1.0,"value":"周杰伦"}}}]}},"size":10000,"track_total_hits":true}
+[TicketGrabbingAi] 2025-08-21 00:22:02  INFO easy-es:30 - ===> Execute By Easy-Es: 
+POST /damai-program/_search?typed_keys=true
+{"query":{"bool":{"must":[{"term":{"areaName.keyword":{"boost":1.0,"value":"北京"}}},{"term":{"actor.keyword":{"boost":1.0,"value":"周杰伦"}}}]}},"size":10000,"track_total_hits":true}
+[TicketGrabbingAi] 2025-08-21 00:23:12  INFO GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+[TicketGrabbingAi] 2025-08-21 00:23:13  INFO GracefulShutdown:76 - Graceful shutdown complete
+[TicketGrabbingAi] 2025-08-21 00:23:13  INFO HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+[TicketGrabbingAi] 2025-08-21 00:23:13  INFO HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+[TicketGrabbingAi] 2025-08-21 00:23:17  INFO TicketGrabbingAiApplication:53 - Starting TicketGrabbingAiApplication using Java 17.0.5 with PID 26996 (G:\TicketGrabbing-AI\target\classes started by shiyu in G:\TicketGrabbing-AI)
+[TicketGrabbingAi] 2025-08-21 00:23:17  INFO TicketGrabbingAiApplication:652 - No active profile set, falling back to 1 default profile: "default"
+[TicketGrabbingAi] 2025-08-21 00:23:18  INFO TomcatWebServer:111 - Tomcat initialized with port 6084 (http)
+[TicketGrabbingAi] 2025-08-21 00:23:18  INFO Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-6084"]
+[TicketGrabbingAi] 2025-08-21 00:23:18  INFO StandardService:168 - Starting service [Tomcat]
+[TicketGrabbingAi] 2025-08-21 00:23:18  INFO StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.43]
+[TicketGrabbingAi] 2025-08-21 00:23:18  INFO [/]:168 - Initializing Spring embedded WebApplicationContext
+[TicketGrabbingAi] 2025-08-21 00:23:18  INFO ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 1188 ms
+[TicketGrabbingAi] 2025-08-21 00:23:19  INFO easy-es:30 - ===> manual index mode activated
+[TicketGrabbingAi] 2025-08-21 00:23:19  INFO HikariDataSource:109 - HikariPool-1 - Starting...
+[TicketGrabbingAi] 2025-08-21 00:23:19  INFO HikariPool:580 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4654e373
+[TicketGrabbingAi] 2025-08-21 00:23:19  INFO HikariDataSource:122 - HikariPool-1 - Start completed.
+[TicketGrabbingAi] 2025-08-21 00:23:20  INFO Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-6084"]
+[TicketGrabbingAi] 2025-08-21 00:23:20  INFO [/]:168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[TicketGrabbingAi] 2025-08-21 00:23:20  INFO DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+[TicketGrabbingAi] 2025-08-21 00:23:20  INFO DispatcherServlet:554 - Completed initialization in 1 ms
+[TicketGrabbingAi] 2025-08-21 00:23:20  INFO TomcatWebServer:243 - Tomcat started on port 6084 (http) with context path '/'
+[TicketGrabbingAi] 2025-08-21 00:23:20  INFO TicketGrabbingAiApplication:59 - Started TicketGrabbingAiApplication in 3.711 seconds (process running for 5.461)
+[TicketGrabbingAi] 2025-08-21 00:23:34  INFO easy-es:30 - ===> Execute By Easy-Es: 
+POST /damai-program/_search?typed_keys=true
+{"query":{"bool":{"must":[{"term":{"areaName.keyword":{"boost":1.0,"value":"北京"}}},{"term":{"actor.keyword":{"boost":1.0,"value":"周杰伦"}}}]}},"size":10000,"track_total_hits":true}
+[TicketGrabbingAi] 2025-08-21 00:24:30  INFO GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+[TicketGrabbingAi] 2025-08-21 00:28:31  INFO TicketGrabbingAiApplication:53 - Starting TicketGrabbingAiApplication using Java 17.0.5 with PID 31956 (G:\TicketGrabbing-AI\target\classes started by shiyu in G:\TicketGrabbing-AI)
+[TicketGrabbingAi] 2025-08-21 00:28:31  INFO TicketGrabbingAiApplication:652 - No active profile set, falling back to 1 default profile: "default"
+[TicketGrabbingAi] 2025-08-21 00:28:32  INFO TomcatWebServer:111 - Tomcat initialized with port 6084 (http)
+[TicketGrabbingAi] 2025-08-21 00:28:32  INFO Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-6084"]
+[TicketGrabbingAi] 2025-08-21 00:28:32  INFO StandardService:168 - Starting service [Tomcat]
+[TicketGrabbingAi] 2025-08-21 00:28:32  INFO StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.43]
+[TicketGrabbingAi] 2025-08-21 00:28:32  INFO [/]:168 - Initializing Spring embedded WebApplicationContext
+[TicketGrabbingAi] 2025-08-21 00:28:32  INFO ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 1225 ms
+[TicketGrabbingAi] 2025-08-21 00:28:32  INFO easy-es:30 - ===> manual index mode activated
+[TicketGrabbingAi] 2025-08-21 00:28:33  INFO HikariDataSource:109 - HikariPool-1 - Starting...
+[TicketGrabbingAi] 2025-08-21 00:28:33  INFO HikariPool:580 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@294ebe11
+[TicketGrabbingAi] 2025-08-21 00:28:33  INFO HikariDataSource:122 - HikariPool-1 - Start completed.
+[TicketGrabbingAi] 2025-08-21 00:28:35  INFO Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-6084"]
+[TicketGrabbingAi] 2025-08-21 00:28:35  INFO [/]:168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[TicketGrabbingAi] 2025-08-21 00:28:35  INFO DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+[TicketGrabbingAi] 2025-08-21 00:28:35  INFO DispatcherServlet:554 - Completed initialization in 1 ms
+[TicketGrabbingAi] 2025-08-21 00:28:35  INFO TomcatWebServer:243 - Tomcat started on port 6084 (http) with context path '/'
+[TicketGrabbingAi] 2025-08-21 00:28:35  INFO TicketGrabbingAiApplication:59 - Started TicketGrabbingAiApplication in 4.349 seconds (process running for 5.667)
+[TicketGrabbingAi] 2025-08-21 00:28:53  INFO easy-es:30 - ===> Execute By Easy-Es: 
+POST /damai-program/_search?typed_keys=true
+{"query":{"bool":{"must":[{"term":{"areaName.keyword":{"boost":1.0,"value":"北京"}}},{"term":{"actor.keyword":{"boost":1.0,"value":"周杰伦"}}}]}},"size":10000,"track_total_hits":true}
+[TicketGrabbingAi] 2025-08-21 00:34:28  WARN HikariPool:825 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m54s69ms228µs800ns).
+[TicketGrabbingAi] 2025-08-21 00:34:28  INFO GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete

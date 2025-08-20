@@ -56,7 +56,7 @@ easy-es:
   #默认为true,若为false则认为不启用本框架
   enable: true
   # es的连接地址,必须含端口
-  address : 192.168.88.128:9200
+  address : 192.168.88.130:9200
   #账号,若无 则可省略此行配置
   username: elastic
   #密码,若无 则可省略此行配置

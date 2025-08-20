@@ -1,6 +1,7 @@
 package com.shiyue.config;
 
 import com.shiyue.advisor.ChatTypeHistoryAdvisor;
+import com.shiyue.ai.function.AiProgram;
 import com.shiyue.enums.ChatType;
 import com.shiyue.service.ChatTypeHistoryService;
 import org.springframework.ai.chat.client.ChatClient;
@@ -27,7 +28,9 @@ public class TicketGrabbingAiAutoConfiguration {
     }
 
     @Bean
-    public ChatClient assistantChatClient(DeepSeekChatModel model, ChatMemory chatMemory, ChatTypeHistoryService chatTypeHistoryService) {
+    public ChatClient assistantChatClient(DeepSeekChatModel model, ChatMemory chatMemory,
+                                          ChatTypeHistoryService chatTypeHistoryService,
+                                          AiProgram aiProgram) {
         return ChatClient
                 .builder(model)
                 .defaultSystem(TICKET_GRABBING_AI_SYSTEM_PROMPT)
@@ -37,7 +40,7 @@ public class TicketGrabbingAiAutoConfiguration {
                                 .order(CHAT_TYPE_HISTORY_ADVISOR_ORDER).build(),
                         MessageChatMemoryAdvisor.builder(chatMemory).order(MESSAGE_CHAT_MEMORY_ADVISOR_ORDER).build()
                 )
-//                .defaultTools(aiProgram)
+                .defaultTools(aiProgram)
                 .build();
     }
 }
